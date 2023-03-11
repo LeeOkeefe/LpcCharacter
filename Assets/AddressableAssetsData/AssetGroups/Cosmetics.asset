@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Cosmetics
+  m_EditorClassIdentifier: 
+  m_GroupName: Cosmetics
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 42e464ce3406f3144bf8f1f4d9a68bef
+  m_SerializeEntries:
+  - m_GUID: 72a3f38d57bd51442b84543952b822d2
+    m_Address: Male Torso
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Male Torso
+    - Cosmetic
+    - TorsoF
+    - MaleTorso
+  - m_GUID: facf72c527b4ab74e8f81c8f83d37295
+    m_Address: Female Torso
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Female Torso
+    - Cosmetic
+    - FemaleTorso
+  - m_GUID: 8b5d057816012d941813caecb1f07c5b
+    m_Address: Female Legs
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cosmetic
+    - Female Legs
+  - m_GUID: 098500496e16d1b46b032f61b6f9a94b
+    m_Address: Male Legs
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cosmetic
+    - Male Legs
+  - m_GUID: c8ee6c71cd32ebe45bab6e6fc41ef36d
+    m_Address: Male Feet
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cosmetic
+    - Male Feet
+  - m_GUID: 088d1455bb4c3314988b3d7e93539394
+    m_Address: Female Feet
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cosmetic
+    - Female Feet
+  - m_GUID: 824f808d5e4caf34d877ecde3112d346
+    m_Address: Female Head
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Female Head
+  - m_GUID: 59c352fdec2f7e94e9b128316192bf67
+    m_Address: Male Head
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Male Head
+  - m_GUID: ae46de0aa8fdde24aa9e484d5c50f984
+    m_Address: Female Body
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Female Body
+  - m_GUID: 634e01827b4110c4abf35258da0b05fb
+    m_Address: Male Body
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Male Body
+  - m_GUID: 51e7cb317f16ae14b963d78c60da35b8
+    m_Address: Female Hair
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cosmetic
+    - Female Hair
+  - m_GUID: 3aa8f155a7da4e14c9faeb4af8b771ed
+    m_Address: Male Hair
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Cosmetic
+    - Male Hair
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: ef128d6c014e7f14cb8c0540cfcae660, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 5a8e185b60911784da3dc09ece5f8b2f, type: 2}
+    - {fileID: 11400000, guid: 891376878c5105642854057e247e8048, type: 2}
