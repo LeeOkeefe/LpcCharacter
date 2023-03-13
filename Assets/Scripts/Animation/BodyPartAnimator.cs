@@ -9,9 +9,9 @@ namespace Animation
     [RequireComponent(typeof(SpriteRenderer))]
     internal sealed class BodyPartAnimator : MonoBehaviour
     {
-        [SerializeField] private SpriteLibraryAsset _spriteLibrary;
+        private SpriteLibraryAsset _spriteLibrary;
         private SpriteRenderer _spriteRenderer;
-        [SerializeField] private Sprite[] _currentSpriteSequence;
+        private Sprite[] _currentSpriteSequence;
     
         private float _animationInterval = 0.3f;
         private bool _isRunning;
@@ -77,7 +77,7 @@ namespace Animation
 
         public void SetIsIdle(bool isIdle)
         {
-            if (_currentSpriteSequence.Length == 0 || isIdle == _isIdle)
+            if (_currentSpriteSequence is null || _currentSpriteSequence.Length == 0 || isIdle == _isIdle)
             {
                 return;
             }
