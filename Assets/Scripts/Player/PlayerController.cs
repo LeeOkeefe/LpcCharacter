@@ -13,6 +13,7 @@ namespace Player
         private Vector2 _movement;
 
         private Direction _lastDirection;
+        private bool IsIdle => _movement is { x: 0, y: 0 };
 
         private void Awake()
         {
@@ -30,54 +31,25 @@ namespace Player
 
         private void Update()
         {
-            Animate();
-        }
+            _lastDirection = GetDirection;
 
-        private void Animate()
-        {
-            if (_movement.x == 0 && _movement.y == 0)
+            if (IsIdle)
             {
                 _animationManager.PauseAnimation(true);
                 return;
             }
-        
+            
             _animationManager.PauseAnimation(false);
-        
-            if (_movement.x > 0 && _movement.y == 0)
-            {
-                MovementAnimation(Direction.Right);
-            }
-        
-            if (_movement.x < 0 && _movement.y == 0)
-            {
-                MovementAnimation(Direction.Left);
-            }
-        
-            if (_movement.x == 0 && _movement.y > 0)
-            {
-                MovementAnimation(Direction.Up);
-            }
-        
-            if (_movement.x == 0 && _movement.y < 0)
-            {
-                MovementAnimation(Direction.Down);
-            }
+            _animationManager.PlayAnimation(AnimationState.Walk, _lastDirection);
         }
-
-        private void MovementAnimation(Direction direction)
+        
+        private Direction GetDirection => (_movement.x, _movement.y) switch
         {
-            _animationManager.PlayAnimation(AnimationState.Walk, direction);
-            _lastDirection = direction;
-        }
-
-        // private void UpdateAnimatorState(AnimationState state, Direction direction)
-        // {
-        //     foreach (var animator in _animators)
-        //     {
-        //         animator.UpdateState(state, direction);
-        //     }
-        //
-        //     _lastDirection = direction;
-        // }
+            (> 0f, 0f) => Direction.Right,
+            (< 0f, 0f) => Direction.Left,
+            (0f, > 0f) => Direction.Up,
+            (0f, < 0f) => Direction.Down,
+            _ => _lastDirection
+        };
     }
 }
