@@ -4,8 +4,8 @@ using UnityEngine.U2D.Animation;
 
 namespace Events
 {
-    [CreateAssetMenu(menuName = "Events/Cosmetic Event Channel")]
-    public class CosmeticEventChannelSO : ScriptableObject
+    [CreateAssetMenu(menuName = "Events/Body Part Event Channel")]
+    public class BodyPartEventChannelSO : ScriptableObject
     {
         public UnityAction<SpriteLibraryAsset> OnEventRaised;
 	

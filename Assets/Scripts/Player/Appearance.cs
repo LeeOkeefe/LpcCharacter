@@ -15,12 +15,12 @@ namespace Player
         
         private CosmeticRepository _cosmeticRepository;
 
-        [SerializeField] private CosmeticEventChannelSO headChangedEventChannel;
-        [SerializeField] private CosmeticEventChannelSO bodyChangedEventChannel;
-        [SerializeField] private CosmeticEventChannelSO hairChangedEventChannel;
-        [SerializeField] private CosmeticEventChannelSO torsoChangedEventChannel;
-        [SerializeField] private CosmeticEventChannelSO legsChangedEventChannel;
-        [SerializeField] private CosmeticEventChannelSO feetChangedEventChannel;
+        [SerializeField] private BodyPartEventChannelSO headChangedEventChannel;
+        [SerializeField] private BodyPartEventChannelSO bodyChangedEventChannel;
+        [SerializeField] private BodyPartEventChannelSO hairChangedEventChannel;
+        [SerializeField] private BodyPartEventChannelSO torsoChangedEventChannel;
+        [SerializeField] private BodyPartEventChannelSO legsChangedEventChannel;
+        [SerializeField] private BodyPartEventChannelSO feetChangedEventChannel;
 
         private int _currentGenderId;
         private int _currentHairId;
