@@ -8,7 +8,7 @@ using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.U2D.Animation;
 
-namespace Appearance
+namespace Player.Appearance
 {
     [RequireComponent(typeof(SpriteRenderer))]
     internal sealed class BodyPartStyle : MonoBehaviour

@@ -7,6 +7,7 @@ namespace Events
 {
     [Serializable]
     public class BodyPartEventSO : UnityEvent<SpriteLibraryAsset>
+    
     {
     }
     
