@@ -6,15 +6,16 @@ using UnityEngine.U2D.Animation;
 namespace Events
 {
     [Serializable]
-    public class CosmeticEventSO : UnityEvent<SpriteLibraryAsset>
+    public class BodyPartEventSO : UnityEvent<SpriteLibraryAsset>
+    
     {
     }
     
-    public class CosmeticEventListener : MonoBehaviour
+    public class BodyPartEventListener : MonoBehaviour
     {
-        [SerializeField] private CosmeticEventChannelSO channel;
+        [SerializeField] private BodyPartEventChannelSO channel;
         
-        public CosmeticEventSO onEventRaised;
+        public BodyPartEventSO onEventRaised;
 
         private void OnEnable()
         {
